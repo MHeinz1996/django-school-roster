@@ -1,0 +1,18 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+<title>All Staff</title>
+{% endblock %}
+
+{% block content %}
+<header class="d-flex justify-content-center" style="font-size:2rem">{{school_name}} Staff</header>
+<div class="container">
+    <div class="row justify-content-center " style="margin-top: 30px;">
+        <div class="col-sm-6 text-center">
+            {% for staff in all_staff %}
+            <p>{{staff.name}}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
