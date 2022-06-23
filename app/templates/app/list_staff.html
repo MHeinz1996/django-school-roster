@@ -10,7 +10,7 @@
     <div class="row justify-content-center " style="margin-top: 30px;">
         <div class="col-sm-6 text-center">
             {% for staff in all_staff %}
-            <p>{{staff.name}}</p>
+            <li style="list-style: none; margin-bottom: 10px;"><a href="/list_staff/{{staff.employee_id}}">{{staff.name}}</a></li>
             {% endfor %}
         </div>
     </div>

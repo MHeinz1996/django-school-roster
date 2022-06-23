@@ -1,0 +1,23 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+<title>{{student.name}} Details</title>
+{% endblock %}
+
+{% block content %}
+<header class="d-flex justify-content-center" style="font-size:2rem">{{student.name}}</header>
+<div class="container">
+    <div class="row justify-content-center " style="margin-top: 30px;">
+        <div class="col-sm-6 text-end">
+            <p>Age:</p>
+            <p>Role:</p>
+            <p>School ID:</p>
+        </div>
+        <div class="col-sm-6 text-start">
+            <p>{{student.age}}</p>
+            <p>{{student.role}}</p>
+            <p>{{student.school_id}}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
